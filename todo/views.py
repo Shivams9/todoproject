@@ -3,7 +3,7 @@ from .forms import TodoForm
 from .models import TodoModel
 def index(request):
     return HttpResponse("Todo App")
-# Create your views here. code here
+# Create your views here. code 
 
 def all(request):
     data = TodoModel.objects.all().order_by('task').reverse()
